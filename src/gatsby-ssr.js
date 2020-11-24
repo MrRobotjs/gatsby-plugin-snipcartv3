@@ -19,11 +19,11 @@ exports.onRenderBody = ({ setPostBodyComponents }, options = {}) => {
 	}
 
 	const components = [
-		<script key='snipcartJs' src={options.js} id="snipcart" data-api-key={options.apiKey} data-autopop={options.autopop} crossorigin></script>
+		<script key='snipcartJs' src={options.js} id="snipcart" data-api-key={options.apiKey} data-autopop={options.autopop} crossOrigin></script>
 	]
 	}
 	if (options.styles){
-		components.push(<link key='snipcartStyle' href={options.styles} type="text/css" rel="stylesheet" crossorigin/>)
+		components.push(<link key='snipcartStyle' href={options.styles} type="text/css" rel="stylesheet" crossOrigin/>)
 	}
 	return setPostBodyComponents(components)
 }
