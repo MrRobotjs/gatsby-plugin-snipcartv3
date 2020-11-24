@@ -27,9 +27,9 @@ exports.onRenderBody = function (_ref) {
 		return;
 	}
 
-	var components = [_react2.default.createElement('script', { key: 'snipcartJs', src: options.js, id: 'snipcart', 'data-api-key': options.apiKey, 'data-autopop': options.autopop, crossorigin: '' })];
+	var components = [_react2.default.createElement('script', { key: 'snipcartJs', src: options.js, id: 'snipcart', 'data-api-key': options.apiKey, 'data-autopop': options.autopop, crossOrigin: '' })];
 	if (options.styles) {
-		components.push(_react2.default.createElement('link', { key: 'snipcartStyle', href: options.styles, type: 'text/css', rel: 'stylesheet', crossorigin: '' }));
+		components.push(_react2.default.createElement('link', { key: 'snipcartStyle', href: options.styles, type: 'text/css', rel: 'stylesheet', crossOrigin: '' }));
 	}
 	return setPostBodyComponents(components);
 };
